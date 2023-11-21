@@ -7,8 +7,8 @@ git init -b main
 git status
 # Đưa code thay đổi vào stage changes để chuẩn bị đưa lên remote repository 
 git add <tên file>
-git add . (Đưa toàn bộ file đang thay đổi vào stage change)
-git add -A (Đưa những file đã thay đổi, ngoại trừ vừa vào mới vào stage change)
+git add . (Đưa toàn bộ file đang thay đổi vào stage change, ngoại trừ vừa vào mới vào stage change)
+git add -A (Đưa những file đã thay đổi vào stage change)
 # add commit
 git commit -m "nội dung commit"
 (chạy git add trước khi commit)
