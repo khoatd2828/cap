@@ -15,6 +15,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&display=swap" rel="stylesheet">
+    <!-- GG icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <!-- font-awesome -->
     <link
       rel="stylesheet"
@@ -27,45 +30,48 @@
     <link rel="stylesheet" href="./css/services/base.css">
     <link rel="stylesheet" href="./css/services/style.css">
 </head>
-<body>
-    <header class="d-flex align-items-center position-fixed w-100">
+  <body id="myBody">
+    <header class="d-flex align-items-center position-fixed w-100 hd__res">
         <div class="container">
-          <nav class="navbar navbar-expand-lg bg-body-tertiary  ">
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
               <a class="navbar-brand fw-bold" href="#">
                 <i class="fa-regular fa-handshake"></i>
-                Masterwork</a>
-              
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                  <li class="nav-item px-3">
+                Masterwork
+              </a>
+
+              <div class="header__navbar navbar-collapse">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+                  <li class="nav-item px-3 position-relative">
                     <a class="nav-link title" aria-current="page" href="#">Home</a>
                   </li>
-                  <li class="nav-item px-3">
+                  <li class="nav-item px-3 position-relative">
                     <a class="nav-link title" href="#">About</a>
                   </li>
-                  <li class="nav-item px-3">
+                  <li class="nav-item px-3 position-relative">
                     <a class="nav-link active title">Service</a>
                   </li>
-                  <li class="nav-item dropdown px-3">
-                    <a class="nav-link title" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+                  <li class="nav-item dropdown px-3 position-relative">
+                    <a class="nav-dropdown nav-link title" href="#" data-bs-toggle="dropdown">
                       Pages
                       <i class="fa-solid fa-angle-down"></i> 
                     </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-      
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
+                    <div class="dropdown-menu nav-menu">
+                      <a href="https://wp.w3layouts.com/masterwork/blog-posts/" class="dropdown-item">Blog Posts</a>
+                      <a href="https://wp.w3layouts.com/masterwork/single-landing-page/" class="dropdown-item">Landing page</a>
+                      <a href="https://wp.w3layouts.com/masterwork/404-page/" class="dropdown-item">404 page</a>
+                    </div>
                   </li>
-                  <li class="nav-item px-3">
+                  <li class="nav-item px-3 position-relative">
                     <a class="nav-link title"href="#">Contact</a>
                   </li>
-
-                  <a href="#" title="search" id="toggleSearch" class="search-right">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                  </a>
+                  <div class="colab text-center">
+                    <a href="#" title="search" id="toggleSearch" class="search-right">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                    </a>
+                    <button class="btn btn-outline-dark6">SCHEDULE A DEMO</button>
+                  </div>
                   <!-- search popup -->
                   <div id="search" class="p-overlay" >
                     <form action="https://wp.w3layouts.com/masterwork/" method="GET" class="d-sm-flex">
@@ -75,24 +81,340 @@
                     <a class="close text-white" href="#" id="closeSearch">×</a>
                   </div>
                 </ul>
-                <button class="btn btn-outline-dark fs-16">SCHEDULE A DEMO</button>
-                <div class="mode-container">
-									<i class="fa-regular fa-sun d-none"></i>
-									<i class="fa-regular fa-moon"></i>
-								</div>
               </div>
+              <div class="mode-container ms-3">
+                <span class="material-symbols-outlined sunny">sunny</span>
+                <span class="material-symbols-outlined moon">dark_mode</span>
+              </div>
+
+              <button class="navbar-toggler">
+                <i class="fa-solid fa-bars open"></i>
+                <i class="fa-solid fa-xmark close"></i>
+              </button>
+
             </div>
           </nav>
         </div>
     </header>
-    <div class="header-fixed-space-height">
-    </div>
-    <section class="introduce"></section>
-    <section class="product"></section>
-    <section class="feature"></section>
-    <section class="footer"></section>
+    <div class="headerfixed"></div>
+    <nav class="breadcrumbs">
+      <div class="container">
+        <a href="https://wp.w3layouts.com/masterwork" rel="nofollow">Home</a>
+        <span>&nbsp;&nbsp;»&nbsp;&nbsp;Services page</span>
+        </div>
+    </nav>
+    <section class="introduce">
+      <div class="container">
+        <div class="introduce__header title-text pt-64 mb-5">Our Services</div>
+        <div class="row">
+          <div class="introduce__left col-lg-6 col-12">
+            <h3>Our Best Services</h3>
+            <h5>Fusce fringilla tincidunt laoreet volutpat cras varius sit. metus vitae diam mauris.</h5>
+            <p>Sed in metus libero. Sed volutpat eget dui ut tempus. Fusce fringilla tincidunt laoreet Morbi ac metus vitae diam scelerisque malesuada eget eu mauris. Cras varius lorem ac velit pharetra, non scelerisque mi vulputate. Phasellus bibendum.</p>
+            <a href="#" class="btn-create">
+              Learn more
+            </a>
+          </div>
+          <div class="introduce__right col-lg-6 col-12">
+            <div class="row gx-0">
+              <div class="col-md-6 ps-3">
+                <div class="card w-100 border-0">
+                  <div class="card-body">
+                    <a href="#" class="icon">
+                      <img src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/service-icon1.png" alt="">
+                    </a>
+                    <h5 class="card-title">Concept & Strategy</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur elit. Inventore, eius!</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 ps-3">
+                <div class="card w-100 border-0">
+                  <div class="card-body">
+                    <a href="#" class="icon">
+                      <img src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/service-icon2.png" alt="">
+                    </a>
+                    <h5 class="card-title">Interactive Business</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur elit. Inventore, eius!</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 ps-3">
+                <div class="card w-100 border-0">
+                  <div class="card-body">
+                    <a href="#" class="icon">
+                      <img src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/service-icon3.png" alt="">
+                    </a>
+                    <h5 class="card-title">Financial Institution</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur elit. Inventore, eius!</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 ps-3">
+                <div class="card w-100 border-0">
+                  <div class="card-body">
+                    <a href="#" class="icon">
+                      <img src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/service-icon4.png" alt="">
+                    </a>
+                    <h5 class="card-title">Worldwide Access</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur elit. Inventore, eius!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="product">
+      <div class="container">
+        <div class="product__header text-center pt-64">
+          <h5 class="fw-bold">THE BEST PRODUCTS</h5>
+          <h1 class="title-text fw-bolder">How we make your strategy business</h1>
+          <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
+        </div>
+        <div class="product__info">
+          <div class="row g-5">
+            <div class="col-lg-4 col-12 product__info--left">
+              <div class="row">
+                <div class="col-md-2 pe-4" style = "padding-left: 15px;">
+                  <div class="product__info-number">
+                    <span>1</span>
+                  </div>
+                </div>
+                <div class="col-md-10 px-4">
+                  <h6>FULL SECURITY</h6>
+                  <p>Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi optio consectetur adipisicing elit.</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-2 px-4">
+                  <div class="product__info-number">
+                    <span>2</span>
+                  </div>
+                </div>
+                <div class="col-md-10 px-4">
+                  <h6>BEST PERFORMANCE</h6>
+                  <p>Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi optio consectetur adipisicing elit.</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-2 px-4">
+                  <div class="product__info-number">
+                    <span>3</span>
+                  </div>
+                </div>
+                <div class="col-md-10 px-4">
+                  <h6>CONCEPT & STRATEGY</h6>
+                  <p>Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi optio consectetur adipisicing elit.</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-4 col-12 product__img">
+              <img src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/service-circle.jpg" class="img-fluid rounded-circle" alt="">
+            </div>
+            
+            <div class="col-lg-4 col-12 product__info--right">
+              <div class="row">
+                <div class="col-md-2 px-4">
+                  <div class="product__info-number">
+                    <span>4</span>
+                  </div>
+                </div>
+                <div class="col-md-10 px-4">
+                  <h6>WORLDWIDE ACCESS</h6>
+                  <p>Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi optio consectetur adipisicing elit.</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-2 px-4">
+                  <div class="product__info-number">
+                    <span>5</span>
+                  </div>
+                </div>
+                <div class="col-md-10 px-4">
+                  <h6>INTERACTIVE BUSINESS</h6>
+                  <p>Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi optio consectetur adipisicing elit.</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-2 px-4">
+                  <div class="product__info-number">
+                    <span>6</span>
+                  </div>
+                </div>
+                <div class="col-md-10 px-4">
+                  <h6>EMAILING</h6>
+                  <p>Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi optio consectetur adipisicing elit.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="feature">
+      <div class="container">
+        <div class="product__header text-center pt-64">
+          <h5 class="fw-bold">FEATURED SERVICES</h5>
+          <h1 class="title-text fw-bolder">Some More Features</h1>
+          <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
+        </div>
+
+        <div class="feature__content">
+          <div class="row">
+            <div class="col-lg-6 col-12">
+              <div class="feature__content--left">
+                <div class="text-left">
+                  <h3 class="fw-bold">Connect people and ideas</h3>
+                </div>
+                <p>Lorem ipsum dolor sit amet adipisicing elit. Consequuntur odio
+                  voluptatem tenetur consequatur adipisicing elit.
+                </p>
+                <ul class="">
+                  <li><span class="fa fa-check fw-bold"></span>
+                    Website Designing and Development
+                  </li>
+                  <li><span class="fa fa-check"></span>
+                    Android and iOs Apps Development 
+                  </li>
+                  <li><span class="fa fa-check"></span>
+                    Successfully Providing Business Solution from 20 years
+                  </li>
+                  <li><span class="fa fa-check"></span>
+                    Excellence Records 
+                  </li>
+                </ul>
+                <a href="#" class="btn-create">
+                  Know more
+                </a>
+                <img src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/b1.jpg" class="img-fluid" alt="">
+              </div>
+            </div>
+            <div class="col-lg-6 col-12">
+              <div class="feature__content--right">
+                <img src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/b2.jpg" class="img-fluid" alt="">
+                <div class="text-left">
+                  <h3 class="fw-bold">Work better together</h3>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur hic odio voluptatem tenetur consequatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur hic odio voluptatem tenetur consequatur adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur hic odio voluptatem tenetur consequatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur hic odio voluptatem tenetur consequatur adipisicing elit.</p>
+                <a href="#" class="btn-create">
+                  Know more
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-12">
+            <div class="row">
+              <div class="col-md-4 col-12">
+                <div class="footer__content">
+                  <h3 class="fw-bold">Meta</h3>
+                  <ul>
+                    <li><a href="https://wp.w3layouts.com/masterwork/wp-login.php">Log in</a></li>
+                    <li><a href="https://wp.w3layouts.com/masterwork/feed/">Entries feed</a></li>
+                    <li><a href="https://wp.w3layouts.com/masterwork/comments/feed/">Comments feed</a></li>
+                    <li><a href="https://wordpress.org/">WordPress.org</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-12">
+                <div class="footer__content">
+                  <h3 class="fw-bold">Categories</h3>
+                  <ul>
+                    <li><a href="https://wp.w3layouts.com/masterwork/wp-login.php">Business</a></li>
+                    <li><a href="https://wp.w3layouts.com/masterwork/feed/">Design</a></li>
+                    <li><a href="https://wp.w3layouts.com/masterwork/comments/feed/">Industry</a></li>
+                    <li><a href="https://wordpress.org/">Programming</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-12">
+                <div class="footer__content">
+                  <h3 class="fw-bold">Archives</h3>
+                  <ul>
+                    <li><a href="https://wp.w3layouts.com/masterwork/wp-login.php">March 2021</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-12">
+            <h3 class="footer__title--form fw-bold">Newsletter </h3>
+            <div class="footer__form">
+              <h4 class="fw-normal">Get latest updates and offers.</h4>
+              <form class="d-flex justify-content-between mb-4" method="post">
+                <input class="fw-normal" type="email" name="email" placeholder="Email Address">
+                <button class="fw-semibold" type="submit">Go</button>
+              </form>
+              <p class="">Sign up for our latest news &amp; articles. We won’t give you spam mails.</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer__end d-flex justify-content-between align-items-center">
+          <div class="footer__end--left">
+            <p class="CopyRights">© 2023 Masterwork. All Rights Reserved | WordPress Theme by 
+              <a href="https://w3layouts.com/">W3Layouts.</a>
+            </p>
+          </div>
+          <div class="footer__end--right">
+            <ul class="footer__end--social d-flex">
+              <li>
+                <a href="https://www.facebook.com/w3layouts/">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://in.linkedin.com/company/w3layouts">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://twitter.com/W3layouts">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://google.com/W3layouts">
+                  <i class="fa-brands fa-google-plus-g"></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://github.com/W3layouts">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <a href="#" class="backToTop d-flex text-white justify-content-center align-items-center text-decoration-none position-fixed">
+      <i class="fa fa-angle-up"></i>
+    </a>
     <!-- script -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- search-popup + -->
     <script>
       $(document).ready(function() {
         $("#toggleSearch, #closeSearch").click(function() {
@@ -100,5 +422,63 @@
         });
       });
     </script>
-</body>
+    <!-- scroll -->
+    <script>
+      $(document).ready(function() {
+        $(window).scroll(function() {
+          var scroll = $(this).scrollTop();
+          $("header").toggleClass("shrink", scroll > 0);
+        });
+      });
+    </script>
+    <!-- script-menu -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- backToTopButton -->
+    <script>
+      $(document).ready(function () {
+          $(window).scroll(function() {
+              if ($(this).scrollTop()) {
+                  $(".backToTop").fadeIn();
+                  $(".backToTop").addClass("visible");
+              }else{
+                  $(".backToTop").removeClass("visible");
+                  $(".backToTop").hide();
+              }
+          });
+          $(".backToTop").click(function() {
+              $('html, body').animate({
+                  scrollTop: 0
+              }, 0)
+          });
+      });
+    </script>
+    <script>
+      document.querySelector(".mode-container").onclick = function () {
+        document.getElementById("myBody").classList.toggle("dark");
+      };
+    </script>
+
+<script>
+  var isOpen = false;
+  document.querySelector(".navbar-toggler").onclick = function () {
+    document.querySelector(".header__navbar").classList.toggle("d-block");
+    var openIcon = document.querySelector(".fa-bars");
+    var closeIcon = document.querySelector(".fa-xmark");
+  
+    var isOpen = openIcon.classList.contains('open');
+    // Reset the classes based on the state
+    if (isOpen) {
+        openIcon.classList.remove('open');
+        openIcon.classList.add('close');
+        closeIcon.classList.remove('close');
+        closeIcon.classList.add('open');
+    } else {
+      openIcon.classList.toggle('open', !isOpen);
+      openIcon.classList.toggle('close', isOpen);
+      closeIcon.classList.toggle('close', !isOpen);
+      closeIcon.classList.toggle('open', isOpen);
+    }
+  }
+</script>
+  </body>
 </html>

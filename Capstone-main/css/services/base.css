@@ -13,6 +13,7 @@
     --card-box-shadow: 1px 5px 7.5px rgba(14, 13, 13, 0.2);
     --card-hover-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
     --transformY: translateY(-0.5rem);
+    --dark-theme: #131617
 }
 * {
     margin: 0;
@@ -26,6 +27,11 @@ html {
     scroll-behavior: smooth;
     line-height: 1.5;
     font-size: 62.5%;
+    margin-bottom: 24px;
+}
+
+.pt-64 {
+    padding-top: 64px;
 }
 
 .container {
@@ -36,4 +42,190 @@ html {
 
 .title {
    color: var(--title-color);
+}
+
+.title-text {
+    max-width: 750px;
+    margin: 0 auto;
+    font-size: 4.6rem;
+    line-height: 5.5rem;
+    font-weight: 800;
+    color: var(--title-color);
+    text-align: center;
+}
+
+.btn-create {
+    background: var(--primary);
+    font-size: 1.4rem;
+    padding: 0 30px;
+    height: 55px;
+    width: 155px;
+    display: block;
+    text-align: center;
+    line-height: 5.4rem;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+@media (min-width: 992px) {
+header.shrink {
+    height: 70px; 
+}
+
+.product__info .row {
+    margin-bottom: 48px;
+}
+
+.product__header p{
+    width: 65%;
+}
+
+.feature__content--left a {
+    margin-bottom: 48px;
+}
+
+.feature {
+    padding-bottom: 96px;
+}
+
+header {
+    height: 90px;
+}
+
+.headerfixed {
+    padding-top: 90px;
+}
+
+.colab {
+    display: flex;
+}
+
+.header__navbar {
+    margin-top: 20px;
+}
+
+.btn-outline-dark6 {
+    position: relative;
+    top: -9px;
+}
+
+@media (max-width: 991px) {
+
+    header {
+        height: 60px; 
+    }
+
+    header.shrink {
+        height: 60px; 
+    }
+
+    .header__navbar {
+        display: block;
+    }
+
+    .introduce__right {
+        margin-top: 40px;
+    }
+
+    .product__info-number {
+        text-align: end;
+    }
+
+    .product__info .row {
+        margin-bottom: 15px;
+    }
+
+    .product__header p {
+        width: 74%;
+    }
+
+    .product__img img {
+        width: 28%;
+    }
+
+    .product__img {
+        text-align: center;
+    }
+
+    .product__info--right {
+        padding-bottom: 25px;
+    }
+
+    .feature__content--left a {
+        margin-bottom: 25px;
+    }
+
+    .feature__content--right {
+        margin-top: 64px;
+    }
+
+    .feature {
+        padding-bottom: 48px;
+    }
+
+    .footer__title--form {
+        margin-top: 48px;
+    }
+
+    .footer__end {
+        flex-direction: column;
+    }
+
+    .footer__end--right {
+        margin-bottom: 38px;
+    }
+
+    .header__navbar {
+        display: none;
+        position: absolute;
+        top: 55px;
+        left: -25px;
+        width: 106%;
+    }
+
+    #toggleSearch
+    {
+        display: block;
+        margin: 0 auto;
+        margin-top: 24px;
+    }
+
+    header .btn {
+        margin-top: 12px;
+    }
+
+    .header__navbar li{
+        background: #fff;
+    }
+
+    .navbar-toggler{
+        height: 36px;
+        width: 36px;
+        color: #fff;
+        background-color: var(--primary);
+        border-radius: 5px;
+        font-size: 2.4rem;
+        padding-left: 6px;
+    }
+
+    .mode-container {
+        position: absolute;
+        right: 60px;
+    }
+
+    .colab {
+        position: relative;
+        text-align: left;
+        background: #fff;
+        padding-bottom: 12px;
+    }
+
+    .headerfixed {
+        padding-top: 60px;
+    }
+}
 }
